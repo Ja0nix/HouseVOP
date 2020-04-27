@@ -16,23 +16,13 @@ body {
 	background-color: #242B33;
 }
 
-.container{
-	max-width: 1200px;
+.header {
 	margin: 0px auto; /*для центрирования контейнера посредине экрана*/
 	padding: 0px 15px; /*для красивых отступов справа и слева*/
+	background-image: url('../img/01.jpg');
+	background-position: center;
+	width:100%;
 
-	@media (max-width: 1200px) {
-	max-width: 970px;
-	}
-	@media (max-width: 992px) {
-	max-width: 750px;
-	}
-	@media (max-width: 767px) {
-	max-width: none; /*для маленькиз разрешений максимальная ширина нам не нужна*/
-	}
-}
-.header {
-	position: relative;
 	/* .header__nav */
 	&__nav {
 		display: flex;
@@ -83,6 +73,7 @@ body {
 		margin: 10% auto;
 	}
 	&__name h2{
+		margin-bottom: 15%;
 		font-family: Playfair Display;
 		font-style: normal;
 		font-weight: bold;
@@ -105,9 +96,4 @@ body {
 	color: #FFFFFF;
 	white-space: nowrap;
 	padding-top: 5%;
-}
-.header img{
-	position: absolute;
-	z-index: -1;
-	min-height: 100%;
 }
