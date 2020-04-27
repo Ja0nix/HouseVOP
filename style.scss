@@ -1,4 +1,16 @@
 @import "#source/scss/nullstyle.scss";
+/*ипортирую шрифты*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway&display=swap');
+/*Material Icon шрифт*/
+@font-face {
+  font-family: 'PostNoBillsJaffna-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/PostNoBillsJaffna.ttf");
+  /* For IE6-8 */
+  src: local("PostNoBillsJaffna-SemiBold"), url("./fonts/PostNoBillsJaffna.ttf") format("truetype"); }
+
+
 body {
 	max-width: 1920px;
 	background-color: #242B33;
@@ -20,20 +32,25 @@ body {
 	}
 }
 .header {
+	position: relative;
 	/* .header__nav */
 	&__nav {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		padding-top: 30px;
 	}
 	/* .header__menu */
 	&__menu {
 		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
 	}
 	/* .header__menu__item */
-	&__menu__item a{
+	&__menu__item {
 		padding-right: 5%;
+		padding-top: 5%;
+	}
+	&__menu__item a{
 		white-space: nowrap;
 		font-family: Raleway;
 		font-style: normal;
@@ -42,13 +59,55 @@ body {
 		line-height: 16px;
 		letter-spacing: 0.05em;
 		text-decoration: none;
+		text-transform: uppercase;
 
 		color: #FFFFFF;
 
 	}
 	/* .header__name */
 	&__name {
+		display: flex;
+		flex-direction: column;
+	}
+	&__name h1{
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 72px;
+		line-height: 86px;
+		text-align: center;
+
+		/* accent */
+
+		color: #D4C17F;
+		margin: 10% auto;
+	}
+	&__name h2{
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 42px;
+		line-height: 64px;
+		text-align: center;
+
+		/* accent */
+
+		color: #D4C17F;
 	}
 }
 .logo {
+	font-family: 'PostNoBillsJaffna-SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+
+	color: #FFFFFF;
+	white-space: nowrap;
+	padding-top: 5%;
+}
+.header img{
+	position: absolute;
+	z-index: -1;
+	min-height: 100%;
 }
