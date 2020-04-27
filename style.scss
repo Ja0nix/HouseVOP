@@ -1,0 +1,54 @@
+@import "#source/scss/nullstyle.scss";
+body {
+	max-width: 1920px;
+	background-color: #242B33;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0px auto; /*для центрирования контейнера посредине экрана*/
+	padding: 0px 15px; /*для красивых отступов справа и слева*/
+
+	@media (max-width: 1200px) {
+	max-width: 970px;
+	}
+	@media (max-width: 992px) {
+	max-width: 750px;
+	}
+	@media (max-width: 767px) {
+	max-width: none; /*для маленькиз разрешений максимальная ширина нам не нужна*/
+	}
+}
+.header {
+	/* .header__nav */
+	&__nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 30px;
+	}
+	/* .header__menu */
+	&__menu {
+		display: flex;
+	}
+	/* .header__menu__item */
+	&__menu__item a{
+		padding-right: 5%;
+		white-space: nowrap;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.05em;
+		text-decoration: none;
+
+		color: #FFFFFF;
+
+	}
+	/* .header__name */
+	&__name {
+	}
+}
+.logo {
+}
