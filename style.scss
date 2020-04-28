@@ -10,10 +10,12 @@
   /* For IE6-8 */
   src: local("PostNoBillsJaffna-SemiBold"), url("./fonts/PostNoBillsJaffna.ttf") format("truetype"); }
 
+$accent: #D4C17F;
 
 body {
 	max-width: 1920px;
 	background-color: #242B33;
+	color: white;
 }
 
 .header {
@@ -50,7 +52,6 @@ body {
 		letter-spacing: 0.05em;
 		text-decoration: none;
 		text-transform: uppercase;
-
 		color: #FFFFFF;
 
 	}
@@ -69,7 +70,7 @@ body {
 
 		/* accent */
 
-		color: #D4C17F;
+		color: $accent;
 		margin: 10% auto;
 	}
 	&__name h2{
@@ -80,20 +81,72 @@ body {
 		font-size: 42px;
 		line-height: 64px;
 		text-align: center;
-
-		/* accent */
-
-		color: #D4C17F;
+		color: $accent;
 	}
 }
+
 .logo {
 	font-family: 'PostNoBillsJaffna-SemiBold';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 36px;
-
-	color: #FFFFFF;
 	white-space: nowrap;
 	padding-top: 5%;
+}
+
+.about {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 5% auto;
+	padding: 0 5%;
+}
+.information {
+	max-width: 500px;
+	margin-bottom: 5%;
+}
+.information h3{
+	margin-bottom: 5%;
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 52px;
+	color: $accent;
+}
+.information h3::before {
+	content: ' ';
+	position: absolute;
+	top: 1;
+	width: 120px;
+	height: 6px;
+	background-color: #C8A35F;
+}
+
+.information p{
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+.visual {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 500px;
+	/* .visual__block */
+	&__block {
+		width: 210px;
+		height: 160px;
+		background: #FFFFFF;
+		border: 0.25px solid #C8A35F;
+		box-sizing: border-box;
+	}
+	/* .visual__text */
+	&__text {
+	}
+	/* .visual__img */
+	&__img {
+	}
 }
