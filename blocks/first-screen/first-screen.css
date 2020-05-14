@@ -1,0 +1,81 @@
+@charset "UTF-8";
+.header {
+  margin: 0px auto;
+  /*для центрирования контейнера посредине экрана*/
+  padding: 0px 15px;
+  /*для красивых отступов справа и слева*/
+  background-image: url("../img/01.jpg");
+  background-position: center;
+  width: 100%;
+  /* .header__nav */
+  /* .header__menu */
+  /* .header__menu__item */
+  /* .header__name */ }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .header__menu__item {
+    padding-right: 5%;
+    padding-top: 5%; }
+  .header__menu__item a {
+    white-space: nowrap;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+  .header__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .header__name h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 86px;
+    text-align: center;
+    /* accent */
+    color: #D4C17F;
+    margin: 10% auto; }
+  .header__name h2 {
+    margin-bottom: 15%;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 64px;
+    text-align: center;
+    color: #D4C17F; }
+
+.logo {
+  font-family: 'PostNoBillsJaffna-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  white-space: nowrap;
+  padding-top: 5%; }

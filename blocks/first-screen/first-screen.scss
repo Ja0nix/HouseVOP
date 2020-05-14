@@ -1,0 +1,78 @@
+$accent: #D4C17F;
+
+.header {
+	margin: 0px auto; /*для центрирования контейнера посредине экрана*/
+	padding: 0px 15px; /*для красивых отступов справа и слева*/
+	background-image: url('../blocks/01.png');
+	background-position: center;
+	width:100%;
+
+	/* .header__nav */
+	&__nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	/* .header__menu */
+	&__menu {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+	}
+	/* .header__menu__item */
+	&__menu__item {
+		padding-right: 5%;
+		padding-top: 5%;
+	}
+	&__menu__item a{
+		white-space: nowrap;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.05em;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #FFFFFF;
+
+	}
+	/* .header__name */
+	&__name {
+		display: flex;
+		flex-direction: column;
+	}
+	&__name h1{
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 72px;
+		line-height: 86px;
+		text-align: center;
+
+		/* accent */
+
+		color: $accent;
+		margin: 10% auto;
+	}
+	&__name h2{
+		margin-bottom: 15%;
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 42px;
+		line-height: 64px;
+		text-align: center;
+		color: $accent;
+	}
+}
+
+.logo {
+	font-family: 'PostNoBillsJaffna-SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	white-space: nowrap;
+	padding-top: 5%;
+}

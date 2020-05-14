@@ -80,7 +80,7 @@ body {
   /*для центрирования контейнера посредине экрана*/
   padding: 0px 15px;
   /*для красивых отступов справа и слева*/
-  background-image: url("../img/01.jpg");
+  background-image: url("../blocks/01.png");
   background-position: center;
   width: 100%;
   /* .header__nav */
@@ -208,6 +208,66 @@ body {
   .visual__block {
     width: 210px;
     height: 160px;
+    margin-bottom: 0px;
+    border: 0.25px solid #C8A35F;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .visual__text {
+    text-align: center;
+    letter-spacing: 0.05em;
+    background: #FFFFFF;
+    color: #000000;
+    padding-top: 5%; }
+  .visual__text h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px; }
+  .visual__text p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px; }
+  .visual__text p {
+    font-size: 14px; }
+  .visual__img1 {
+    background-image: url("../img/02.png"); }
+  .visual__img2 {
+    background-image: url("../img/03.png"); }
+
+.forward_testing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 5% auto;
+  padding: 0 5%; }
+
+.visual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 500px;
+  /* .visual__block */ }
+  .visual__block {
+    width: 210px;
+    height: 160px;
+    margin-bottom: 0px;
     background: #FFFFFF;
     border: 0.25px solid #C8A35F;
     -webkit-box-sizing: border-box;
