@@ -1,0 +1,39 @@
+$accent: #D4C17F;
+
+.testimonials {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* .testimonials__block */
+	&__block {
+		width: 193px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-content: center;
+		flex-wrap: nowrap;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	/* .testimonials__pic */
+	&__pic {
+		width: 80px;
+		height: 80px;
+		margin: 0 auto;
+	}
+	/* .testimonials__desc */
+	&__desc {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 27px;
+		/* or 135% */
+
+		text-align: center;
+
+		color: #FFFFFF;
+
+		padding-top: 15%;
+	}
+}

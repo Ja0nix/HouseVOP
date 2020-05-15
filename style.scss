@@ -13,12 +13,15 @@
 $accent: #D4C17F;
 
 body {
-	max-width: 1920px;
+/*	max-width: 1920px;*/
 	background-color: #242B33;
 	color: white;
 }
 
 @import "blocks/first-screen/first-screen.scss";
+@import "blocks/testimonials/testimonials.scss";
+@import "blocks/appartments/appartments.scss";
+@import "blocks/cta/cta.scss";
 
 @import "#source/scss/howdoes.scss";
 
