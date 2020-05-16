@@ -22,29 +22,6 @@ body {
 @import "blocks/testimonials/testimonials.scss";
 @import "blocks/appartments/appartments.scss";
 @import "blocks/cta/cta.scss";
-
-@import "#source/scss/howdoes.scss";
-
-.forward_testing {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	margin: 5% auto;
-	padding: 0 5%;
-}
-.visual {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 500px;
-	/* .visual__block */
-	&__block {
-		width: 210px;
-		height: 160px;
-		margin-bottom: 0px;
-		background: #FFFFFF;
-		border: 0.25px solid #C8A35F;
-		box-sizing: border-box;
-	}
-}
+@import "blocks/map/map.scss";
+@import "blocks/ctaform/ctaform.scss";
+@import "blocks/footer/footer.scss";

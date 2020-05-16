@@ -1,9 +1,14 @@
 .cta {
+	background: url('./blocks/cta/01.png');
+	background-position: center;
 	/* .cta__container */
 	&__container {
 		max-width: 850px;
-		margin: 5% auto;
+		margin: 10% auto;
 		padding: 0 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
 	}
 	/* .cta__h3 */
 	&__h3 {
@@ -12,10 +17,12 @@
 		font-weight: bold;
 		font-size: 36px;
 		line-height: 48px;
+		min-width: 100%;
 
 		/* accent */
 
 		color: #D4C17F;
+		margin-bottom: 5%;
 	}
 	/* .cta__p */
 	&__p {
@@ -29,6 +36,67 @@
 
 		color: #FFFFFF;
 
-		max-width: 535px;
+		margin-bottom: 10%;
+		margin-right: 10%;
+		flex: 1 1;
 	}
+}
+.form {
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-right: 5%;
+}
+input {
+	background: #FFFFFF;
+	opacity: 0.2;
+	padding: 3% 10%;
+	cursor: pointer;
+	margin-bottom: 5%;
+	width: 253px;
+	height: 50px;
+}
+
+input::placeholder {
+	padding: 3% 10%;
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+	/* identical to box height, or 193% */
+	color: black;
+}
+.form__p {
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		/* or 150% */
+
+
+		color: #FFFFFF;
+
+		width: 253px;
+		margin-bottom: 10%;
+	}
+
+button {
+	background: #D4C17F;
+	padding: 3% 5%;
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 27px;
+	/* identical to box height, or 169% */
+
+	text-align: center;
+
+	color: #FFFFFF;
+	width: 253px;
+	height: 50px;
 }

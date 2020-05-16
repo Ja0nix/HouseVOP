@@ -1,0 +1,55 @@
+.ctaform {
+		max-width: 850px;
+		margin: 10% auto;
+		padding: 0 1rem;
+	/* .ctaform__h3 */
+	&__h3 {
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 48px;
+
+		/* accent */
+
+		color: #D4C17F;
+		margin-bottom: 5%;
+	}
+	/* .ctaform__p */
+	&__p {
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 16px;
+		/* or 123% */
+
+		text-align: center;
+
+		color: #E7E7E7;
+		max-width: 250px;
+	}
+}
+
+
+.form__2 {
+	max-width: 850px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.btn {
+	background: #D4C17F;
+	padding: 0 5%;
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 27px;
+	/* identical to box height, or 169% */
+
+	color: #FFFFFF;
+	width: 253px;
+	height: 50px;
+}
